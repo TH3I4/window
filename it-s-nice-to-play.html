@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+   function TohokuImgPopup(url) {
+   window.open('file:///Users/theiaflynn/theiafn@github.io/embed/but-please-be-careful.html',"but please, be careful","height=300,width=280,left=1125,top=10")}
+
+   function closeWindow() {
+setTimeout(function() {
+window.close();
+}, 80000);
+}
+
+window.onload = closeWindow();
+</script>
+<style>
+
+    html{
+    background-color: violet;
+    margin:-10px;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    }
+
+    .grass {
+      height: 45vh;
+      width: 110vw;
+      top:55vh;
+      background-color: orange;
+      position: fixed;
+      outline-style: solid;
+      outline-width:1pt;
+      outline-color:black;
+    }
+
+    .new{
+      height: 20vh;
+      width: 20vw;
+      top:4vh;
+      left:95vw;
+      background-color: violet;
+      position: fixed;
+    }
+
+    
+    .player{}
+
+    #player-one{
+      width:43vh;
+      z-index:100; 
+      position:absolute;
+      top:11%;
+      left:28%; 
+    }
+    #player-two{
+      width:38vh;
+      z-index:90;
+      position:absolute; 
+      top:9%;
+      left:10%; 
+    }
+
+    #player-three{
+      width:38vh;
+      z-index:90;
+      position:absolute;
+      top:9%;
+      left:53%; 
+    }
+    #bouger{
+    position: absolute; 
+    z-index:1000;
+    }
+    #ball{
+    width:12vh;
+    position:relative;
+    left:6vw; 
+    top:82vh; 
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<div vector-effect="non-scaling-stroke" class="grass"></div>
+
+<div id="player-one" class="player">
+     <img vector-effect="non-scaling-stroke" src="data1/player.svg"> 
+</div>
+
+<div id="player-two" class="player">
+     <img vector-effect="non-scaling-stroke" src="data1/player.svg"> 
+</div>
+
+<div id="player-three" class="player">
+<!--      <img vector-effect="non-scaling-stroke" src="data1/player.svg">  -->
+<object vector-effect="non-scaling-stroke" data="data1/player.svg" type="image/svg+xml"></object>
+</div>
+
+        <div id="bouger" >
+          <div id="drag"> 
+            <div class="filtered ui-draggable ui-draggable-handle"> 
+              <img onmouseover="TohokuImgPopup()" id="ball" src="data1/ball.svg"> 
+             </div>
+          </div>
+        </div> 
+
+<div class="new"></div>
+
+<script type="text/javascript" src="js/drag.js"></script>
+
+</body>
+</html>
+
+
+
