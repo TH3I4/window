@@ -14,7 +14,7 @@ function TohokuImgPopup(url) {
 function closeWindow() {
 setTimeout(function() {
 window.close();
-}, 600);
+}, 800);
 }
 
 window.onload = closeWindow();
@@ -24,27 +24,8 @@ window.onload = closeWindow();
 <style type="text/css">
 
 
-.ball{
-      left:60vw;
-      bottom: 17vh;
-      position: fixed;
-      z-index:300;
-      cursor: pointer;
-      animation: bounce 1.5s ease-in-out infinite;
-}
 
 html{cursor: nesw-resize;}
-
-@keyframes bounce{
-  0% {
-    transform: translate(0,0);
-  }
-  50% {
-    transform: translate(0,-50vh);
-  }
-  100% {
-    transform: translate(0,0);
-  }	
 
 
 </style>
