@@ -12,6 +12,15 @@ window.open('https://theiaflynn.github.io/window/stepy.html',"*step-step*","heig
 window.open('https://theiaflynn.github.io/window/stepitty.html',"*step-step-step*","height=308,width=299,left=130,top=130")
 window.open('https://theiaflynn.github.io/window/step.html',"welcome!","height=240,width=225,left=2,top=20") 
 }
+
+function closeWindow() {
+setTimeout(function() {
+window.close();
+}, 50000);
+}
+
+window.onload = closeWindow();
+
 </script>
 <style>
     html{ 
